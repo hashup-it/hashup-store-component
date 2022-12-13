@@ -6,16 +6,14 @@ export interface HashupStoreProps {
 }
 
 
-const Button = (props: HashupStoreProps) => {
+const HashupStore = (props: HashupStoreProps) => {
+  const { isLoading } = useEthereum();
 
-
-	
-
-  const { isLoading } = useEthereum()
-
-  return <button>
-	  {isLoading ? "loading" : "ok"}
-  </button>;
+  return (
+   
+      <button>{isLoading ? "loading" : "ok"}</button>
+   
+  );
 };
 
-export default Button;
+export default HashupStore;
