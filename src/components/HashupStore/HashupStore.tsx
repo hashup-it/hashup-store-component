@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
+import { useEthereum } from "../../hooks/useEthereum";
 
 export interface HashupStoreProps {
-  label: string;
+  licenseAddress: string;
 }
 
+
 const Button = (props: HashupStoreProps) => {
-  return <button>{props.label}</button>;
+
+
+	
+
+  const { isLoading } = useEthereum()
+
+  return <button>
+	  {isLoading ? "loading" : "ok"}
+  </button>;
 };
 
 export default Button;

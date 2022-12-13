@@ -1,5 +1,5 @@
 {
-  "name": "@hashup-it/hashup-store-component",
+  "name": "@hashupit/hashupstore",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/hashup-it"
   },
@@ -12,9 +12,12 @@
   "dependencies": {
     "@rollup/plugin-commonjs": "^23.0.4",
     "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-replace": "^5.0.1",
     "@rollup/plugin-typescript": "^10.0.1",
     "@types/react": "^18.0.26",
+    "ethers": "^5.7.2",
     "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "rollup": "^3.7.3",
     "rollup-plugin-dts": "^5.0.0",
     "tslib": "^2.4.1",
