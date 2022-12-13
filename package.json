@@ -1,16 +1,29 @@
 {
-  "name": "@hashupit/hashupstore",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/hashup-it"
-  },
+  "name": "@hashup-it/hashup-store",
   "version": "0.0.1",
   "license": "MIT",
   "type": "module",
   "scripts": {
     "rollup": "rollup -c"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hashup-it/hashup-store-component.git"
+  },
+  "keywords": [
+    "hashup",
+    "hashup-it",
+    "hash",
+    "polygon",
+    "blockchain",
+    "ethereum"
+  ],
+  "author": "hashup-it (https://hashup.it)",
+  "bugs": {
+    "url": "https://github.com/hashup-it/hashup-store-component/issues"
+  },
+  "homepage": "https://github.com/hashup-it/hashup-store-component",
   "dependencies": {
-    
     "@rollup/plugin-commonjs": "^23.0.4",
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-replace": "^5.0.1",
@@ -28,7 +41,6 @@
   "files": [
     "dist"
   ],
-
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts"
 }
